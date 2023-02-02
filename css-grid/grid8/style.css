@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    /* grid-template-rows: 200px 200px 100px;
+    grid-template-columns: 100px 1fr 1fr; */
+    grid-template: repeat(3, 200px) / repeat(auto-fit, minmax(200px, 1fr));
+    background-color: crimson;
+    padding: 30px;
+    gap: 20px;
+    grid-template-areas:
+        "header header header"
+        "icerik aside main"
+        "footer footer footer"
+    ;
+
+}
+
+.kutu {
+    background-color: rebeccapurple;
+    padding: 10px;
+    color: #fff;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.kutu1 {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1 / 3; */
+    background-color: cadetblue;
+    grid-area: header;
+}
+
+.kutu2 {
+    color: black;
+    background-color: honeydew;
+    grid-area: icerik;
+}
+
+.kutu3 {
+    background-color: violet;
+    grid-area: aside;
+}
+
+.kutu4 {
+    background-color: rosybrown;
+    grid-area: main;
+}
+
+.kutu5 {
+    background-color: chocolate;
+    grid-area: footer;
+}

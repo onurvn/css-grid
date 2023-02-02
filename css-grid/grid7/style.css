@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+.container {
+    display: grid;
+    width: 900px;
+    margin: 0 auto 0;
+    grid-column-gap: 10px;
+    background-color: rgb(126, 159, 148);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 300px 50px 100px;
+    grid-template-areas:
+        "ust ust ust"
+        "kenar icerik icerik"
+        "kenar icerik icerik"
+        "kenar footer footer"
+    ;
+}
+
+.header {
+    grid-area: ust;
+}
+
+.aside {
+    grid-area: kenar;
+}
+
+.section {
+    grid-area: icerik;
+}
+
+.footer {
+    grid-area: footer;
+}

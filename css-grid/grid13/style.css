@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "onur onur . . ."  
+    "onur onur . . .";
+    
+    padding: 10px 10px;
+    background-color: lightblue;
+    gap: 10px;
+}
+
+.container>div {
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.item1 {
+    grid-area: onur;
+}

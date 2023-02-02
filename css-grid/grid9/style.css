@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+
+}
+
+.grid-container {
+    display: grid;
+    background-color: rgb(142, 68, 15, 0.8);
+    grid-template-areas:
+        "header header header header header header"
+        "menu1 main main main right1 right1"
+        "menu1 footer footer footer footer footer"
+    ;
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.i {
+    border: 1px solid #ccc;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu1;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right1;
+}
+
+.item5 {
+    grid-area: footer;
+}

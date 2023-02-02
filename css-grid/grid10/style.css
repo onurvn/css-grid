@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+ul,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: tomato;
+    padding: 10px;
+    /* column-gap: 50px;
+    row-gap: 10px; */
+    gap: 10px 70px;
+}
+
+.grid-item {
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid rgba(204, 204, 204, 0.384);
+    font-size: 32px;
+}
